@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Burger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="img/logo.png" alt="Burger logo">
+        </aside>
+        <article>
+
+            <div id="selectedBurg"></div><br>
+
+            <form action="http://localhost:5050/api/post" method="POST">
+                <input type="hidden" id="burgerOrder" name="burgerOrder">
+
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+
+                <label for="postcode">Postal code:</label><br>
+                <input type="text" id="postcode" name="postcode"><br>
+
+                <label for="phone">Phone number:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" id="" cols="30" rows="10"></textarea><br>
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Order">
+            </form>
+        </article>
+    </main>
+    <footer>
+        &copy; 2020 Best Burger Demo site
+    </footer>
+    <script>
+        function getOrderedItem(pieOrder){
+            return '' + 
+                `<div class="grid_item">
+                <img src=img/${pieOrder.id}.jpg>
+                <div class="card_box_title">
+                <div class="title">${pieOrder.title}</div>
+                <div class="price">Price: ${pieOrder.price}</div>
+                </div>
+                <p>${pieOrder.desc}</p>
+                </div>` + '';
+        };
+        
+        window.addEventListener("DOMContentLoaded", function (e) {
+            const order = localStorage.getItem("order");
+            const orderDetails = document.getElementById("selectedBurg");
+
+            if (order) {
+                const pieOrder = JSON.parse(order);
+                const orderInput = document.getElementById("burgerOrder");
+                orderInput.value = order;
+                
+                console.log(pieOrder);
+                
+                orderDetails.innerHTML = getOrderedItem(pieOrder);
+                
+            }
+        });
+    </script>
+</body>
+
+</html>

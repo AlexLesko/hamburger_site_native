@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Black Burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor non tellus sed porttitor. Cras et augue a urna ultricies tempor vitae suscipit mauris.",
+        "price": "25$",
+        "img": "img/black_burger.jpg",
+        "alt": "Black Burger",
+        "topBurger": "false",
+        "selection": "black_burger"
+    },
+    {
+        "title": "Cheese Burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor non tellus sed porttitor. Cras et augue a urna ultricies tempor vitae suscipit mauris.",
+        "price": "15$",
+        "img": "img/cheese_burger.jpg",
+        "alt": "Cheese Burger",
+        "topBurger": "false",
+        "selection": "cheese_burger"
+    },
+    {
+        "title": "Colosal Burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor non tellus sed porttitor. Cras et augue a urna ultricies tempor vitae suscipit mauris.",
+        "price": "60$",
+        "img": "img/colosal_burger.jpg",
+        "alt": "Colosal Burger",
+        "topBurger": "false",
+        "selection": "colosal_burger"
+    },
+    {
+        "title": "Double Burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor non tellus sed porttitor. Cras et augue a urna ultricies tempor vitae suscipit mauris.",
+        "price": "30$",
+        "img": "img/double_burger.jpg",
+        "alt": "Double Burger",
+        "topBurger": "true",
+        "selection": "double_burger"
+    },
+    {
+        "title": "Minimalist Burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor non tellus sed porttitor. Cras et augue a urna ultricies tempor vitae suscipit mauris.",
+        "price": "10$",
+        "img": "img/minimal_burger.jpg",
+        "alt": "Minimalist Burger",
+        "topBurger": "false",
+        "selection": "minimal_burger"
+    },
+    {
+        "title": "Vega Burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor non tellus sed porttitor. Cras et augue a urna ultricies tempor vitae suscipit mauris.",
+        "price": "40$",
+        "img": "img/vega_burger.jpg",
+        "alt": "Vega Burger",
+        "topBurger": "false",
+        "selection": "vega_burger"
+    }
+]
